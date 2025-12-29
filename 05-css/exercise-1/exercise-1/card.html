@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#eee;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+padding:10px;
+}
+.card{
+background:#fff;
+border-radius:6px;
+position:relative;
+}
+img{
+width:100%;
+aspect-ratio:16/9;
+object-fit:contain;
+}
+.badge{
+position:absolute;
+top:5px;
+right:5px;
+background:green;
+color:white;
+font-size:11px;
+padding:3px 6px;
+border-radius:10px;
+}
+.content{
+padding:10px;
+}
+p{
+font-size:14px;
+color:#555;
+}
+.price{
+display:flex;
+gap:6px;
+margin:6px 0;
+}
+.old{
+text-decoration:line-through;
+color:#888;
+}
+.new{
+color:red;
+}
+button{
+width:100%;
+padding:8px;
+border:none;
+background:blue;
+color:white;
+}
+@media(max-width:900px){
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+@media(max-width:500px){
+.grid{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/51OyWry1APL.jpg">
+<span class="badge">New</span>
+<div class="content">
+<h3>realme c71</h3>
+<p>Simple smartphone with good camera and battery life.</p>
+<div class="price">
+<span class="old">12999</span>
+<span class="new">10999</span>
+</div>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw803d2a14/images/Fastrack/Catalog/38149WM01_1.jpg?sw=600&sh=600">
+<span class="badge">New</span>
+<div class="content">
+<h3>Smart Watch</h3>
+<p>Basic smartwatch for fitness tracking and notifications.</p>
+<div class="price">
+<span class="old">5499</span>
+<span class="new">3999</span>
+</div>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://sony.scene7.com/is/image/sonyglobalsolutions/Headphones-primary%20tout-mobile-1534x1083?$toutMobile$&fmt=png-alpha">
+<span class="badge">New</span>
+<div class="content">
+<h3>Headphones</h3>
+<p>Comfortable headphones with clear sound quality.</p>
+<div class="price">
+<span class="old">2199</span>
+<span class="new">1199</span>
+</div>
+<button>Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
