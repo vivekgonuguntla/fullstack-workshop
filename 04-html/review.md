@@ -1,20 +1,20 @@
 # Review: 04-html
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 11:39
+**Review Date:** 2025-12-30 12:39
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 5
+**Files submitted:** 6
 
 ### Required Files
 
 - ✅ Found: `portfolio-v1.html`
 - ✅ Found: `portfolio-v2.html`
 - ✅ Found: `portfolio-v2.css`
-- ❌ Missing: `portfolio-v3.html`
+- ✅ Found: `portfolio-v3.html`
 
 ### Code Review
 
@@ -63,7 +63,22 @@
 
    **Score: 5/5**
 
-### Topic Score: 29 / 35 (82%)
+📄 **portfolio-v3.html**
+   Path: `04-html/portfolio-v3.html`
+   Lines: 190
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Images have `alt` attributes
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+    - 📌 **Version 3 (Bootstrap)**
+    - ✅ Uses Bootstrap framework
+    - ✅ Uses Bootstrap classes
+
+   **Score: 5/5**
+
+### Topic Score: 39 / 40 (97%)
 
 ---
 
