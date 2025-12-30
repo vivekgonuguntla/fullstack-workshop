@@ -1,35 +1,28 @@
-function validatePassword(password) {
-    const errors = [];
-    const suggestions = [];
-    let score = 0;
+const validatePassword = (password) => {
+  const errors = [];
 
-    if (password.length >= 8) score += 25;
-    else errors.push('Too short');
+  const rules = [
+    { test: /.{8,}/, message: 'Too short', score: 25 },
+    { test: /[A-Z]/, message: 'Add uppercase letter', score: 20 },
+    { test: /[a-z]/, message: 'Add lowercase letter', score: 20 },
+    { test: /[0-9]/, message: 'Add number', score: 20 },
+    { test: /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/, message: 'Add special character', score: 15 },
+  ];
 
-    if (/[A-Z]/.test(password)) score += 20;
-    else errors.push('Add uppercase letter');
+  const score = rules.reduce((acc, rule) => {
+    if (rule.test.test(password)) return acc + rule.score;
+    errors.push(`${rule.message}`);
+    return acc;
+  }, 0);
 
-    if (/[a-z]/.test(password)) score += 20;
-    else errors.push('Add lowercase letter');
+  return {
+    isValid: errors.length === 0,
+    score: Math.min(score, 100),
+    errors,
+    suggestions: [...errors]
+  };
+};
 
-    if (/[0-9]/.test(password)) score += 20;
-    else errors.push('Add number');
 
-    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) score += 15;
-    else errors.push('Add special character');
-
-    
-    suggestions.push(...errors);
-
-    return {
-        isValid: errors.length === 0,
-        score: Math.min(score, 100),
-        errors,
-        suggestions
-    };
-}
-
-console.log(validatePassword('abc'));
-
-console.log(validatePassword('MyP@ssw0rd'));
-
+console.log(validatePassword('abc'));     
+console.log(validatePassword('MyP@ssw0rd')); 
