@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-
-    <div class="container" style="display: flex; flex-direction: column; gap: 10px; align-items:center ;justify-content: center;">
+        <header>
         <h2>📝 Categorized Todo List</h2>
-
+            </header>
+    <div class="container" style="display: flex; flex-direction: column; gap: 10px; align-items:center ;justify-content: center;">
+        
+          <main>
+        <section>
         <div class="add-task">
             <input type="text" id="taskInput" placeholder="Add task...">
             <select id="categorySelect">
@@ -19,22 +22,27 @@
             </select>
             <button id="addTaskBtn">Add</button>
         </div>
-
+        </section>
+        
+          <section>
         <div class="filters">
             <strong>Filter:</strong>
             <button class="filter-btn" data-category="All">All</button>
             <button class="filter-btn" data-category="Work">Work</button>
             <button class="filter-btn" data-category="Personal">Personal</button>
         </div>
+          </section>
 
         <ul id="todoList"></ul>
-
+        <section>
         <div class="counts">
             <strong>Task Count:</strong>
             <span id="countWork">Work: 0</span> |
             <span id="countPersonal">Personal: 0</span>
         </div>
+        </section>
     </div>
+    </main>
 
     <script src="./tudo.js"></script>
 </body>
