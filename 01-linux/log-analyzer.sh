@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 set -u
+set -o pipefail
+
 logf=${1:-"C:/Users/vivekgonuguntla/ex1/sample.txt"}
 
 if [[ ! -f "$logf" ]]; then
