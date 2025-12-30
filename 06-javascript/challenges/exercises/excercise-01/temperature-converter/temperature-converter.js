@@ -1,21 +1,24 @@
-let input = prompt('Choose an option:\n1 .Celsius to Fahrenheit\n2. Fahrenheit to Celsius')
+const input = Number(
+  prompt('Choose an option:\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius')
+);
 
-let temperature = prompt('enter the temperature?')
+const temperature = Number(prompt('Enter the temperature:'));
 
-input = Number(input);
-temperature = Number(temperature);
+const convertCtoF = (temp) => (temp * 9 / 5) + 32;
+const convertFtoC = (temp) => (temp - 32) * 5 / 9;
 
-if (input === 1) {
-  let Fahernheit = (temperature * 9/5) + 32;
-  console.log(Fahernheit ,'fahrenheit');
-  alert(Fahernheit +'fahrenheit');
-  
-} else if (input === 2){
-  let  celsius = (temperature - 32 ) * 5/9;
-  console.log(celsius ,'celsius');
-  alert(celsius +'celsius');
-
+if (Number.isNaN(input) || Number.isNaN(temperature)) {
+  alert('Please enter valid numbers');
+  console.log('Invalid input');
+} else if (input === 1) {
+  const fahrenheit = convertCtoF(temperature);
+  alert(`${fahrenheit} °F`);
+  console.log(`${fahrenheit} °F`);
+} else if (input === 2) {
+  const celsius = convertFtoC(temperature);
+  alert(`${celsius} °C`);
+  console.log(`${celsius} °C`);
 } else {
-  console.log('enter valid numbers that is 1 or 2 ');
-  alert('enter valid numbers that is 1 or 2 ');
+  alert('Please choose only 1 or 2');
+  console.log('Please choose only 1 or 2');
 }
