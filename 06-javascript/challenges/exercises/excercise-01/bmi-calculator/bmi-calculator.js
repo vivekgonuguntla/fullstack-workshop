@@ -1,33 +1,35 @@
-// Ask for weight in kg
-// Ask for height in meters
-// Calculate BMI: weight / (height * height)
-// Display BMI and category:
-// - Underweight: < 18.5
-// - Normal: 18.5 - 24.9
-// - Overweight: 25 - 29.9
-// - Obese: >= 30
+// Arrow function to calculate BMI and return category
+const calculateBMI = (weight, height) => {
+  const bmi = weight / (height ** 2);
+  let category = '';
 
-let weight = prompt('Enter your weight in kg?');
+  if (bmi < 18.5) category = 'Underweight';
+  else if (bmi >= 18.5 && bmi <= 24.9) category = 'Normal weight';
+  else if (bmi >= 25 && bmi <= 29.9) category = 'Overweight';
+  else category = 'Obese';
 
-let height = prompt('Enter your height in meters?');
+  return { bmi: bmi.toFixed(2), category };
+};
 
-weight = Number(weight);
-height = Number(height);
+// Ask for number of users
+const numUsers = Number(prompt("How many users do you want to calculate BMI for?"));
+const users = [];
 
-let bmi = weight / (height * height);
-if (bmi < 18.5) {
-  alert('You are Underweight' + bmi)
-  console.log( 'You are Underweight', bmi);
-} else if(bmi > 18.5 && bmi < 24.9){
-   alert('You are in normal weight' + bmi)
-  console.log( 'You in normal weight', bmi);
-  
-} else if(bmi > 25 && bmi < 29.9){
-   alert('You are in Over weight' + bmi)
-  console.log( 'You in Over weight', bmi);
-  
-} else {
-  alert('You are Obese' + bmi)
-  console.log( 'You are Obese', bmi);
+// Collect weight and height for each user
+for (let i = 0; i < numUsers; i++) {
+  const weight = Number(prompt(`Enter weight in kg for user ${i + 1}:`));
+  const height = Number(prompt(`Enter height in meters for user ${i + 1}:`));
+  users.push({ weight, height });
 }
 
+// Calculate BMI for all users using map
+const results = users.map((user, index) => {
+  const res = calculateBMI(user.weight, user.height);
+  return { ...res, user: index + 1 };
+});
+
+// Display results
+results.forEach(res => {
+  alert(`User ${res.user}: BMI is ${res.bmi} and category is ${res.category}`);
+  console.log(`User ${res.user}: BMI is ${res.bmi} and category is ${res.category}`);
+});
