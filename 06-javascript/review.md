@@ -1,7 +1,7 @@
 # Review: 06-javascript
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 12:39
+**Review Date:** 2025-12-30 13:39
 
 ---
 
@@ -13,7 +13,30 @@
 
 📄 **counter.html**
    Path: `06-javascript/challenges/challenge-01/counter.html`
-   Lines: 48
+   Lines: 54
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 5/5**
+
+📄 **counter.js**
+   Path: `06-javascript/challenges/challenge-01/counter.js`
+   Lines: 47
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
+
+   **Score: 5/5**
+
+📄 **form-validator.html**
+   Path: `06-javascript/challenges/challenge-02/form-validator.html`
+   Lines: 47
 
     - ✅ Has `<!DOCTYPE html>`
     - 💡 Consider using semantic tags (header, nav, main, etc.)
@@ -22,40 +45,17 @@
 
    **Score: 4/5**
 
-📄 **counter.js**
-   Path: `06-javascript/challenges/challenge-01/counter.js`
-   Lines: 52
-
-    - ✅ Uses `const`/`let` (no `var`)
-    - ✅ Uses strict equality (`===`)
-    - ✅ Uses arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - ✅ Uses modern array methods
-
-   **Score: 4/5**
-
-📄 **form-validator.html**
-   Path: `06-javascript/challenges/challenge-02/form-validator.html`
-   Lines: 46
-
-    - ✅ Has `<!DOCTYPE html>`
-    - 💡 Consider using semantic tags (header, nav, main, etc.)
-    - ❌ Missing viewport meta tag
-    - ✅ Has `lang` attribute
-
-   **Score: 3/5**
-
 📄 **form-validator.js**
    Path: `06-javascript/challenges/challenge-02/form-validator.js`
-   Lines: 106
+   Lines: 104
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
     - ✅ Uses arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 3/5**
+   **Score: 5/5**
 
 📄 **form.css**
    Path: `06-javascript/challenges/challenge-02/form.css`
@@ -71,14 +71,14 @@
 
 📄 **tudo.html**
    Path: `06-javascript/challenges/challenge-03/tudo.html`
-   Lines: 41
+   Lines: 49
 
     - ✅ Has `<!DOCTYPE html>`
-    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Uses semantic HTML5 tags
     - ✅ Has viewport meta tag (mobile-friendly)
     - ✅ Has `lang` attribute
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **tudo.js**
    Path: `06-javascript/challenges/challenge-03/tudo.js`
@@ -142,27 +142,27 @@
 
 📄 **type-checker.js**
    Path: `06-javascript/challenges/challenge-12/type-checker.js`
-   Lines: 33
+   Lines: 40
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
     - ✅ Uses arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 3/5**
+   **Score: 4/5**
 
 📄 **validate-password.js**
    Path: `06-javascript/challenges/challenge-13/validate-password.js`
-   Lines: 35
+   Lines: 28
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 2/5**
+   **Score: 5/5**
 
 📄 **basic-quiz.html**
    Path: `06-javascript/challenges/exercises/excercise-01/basic-quiz/basic-quiz.html`
@@ -189,88 +189,88 @@
 
 📄 **bmi-calculator.html**
    Path: `06-javascript/challenges/exercises/excercise-01/bmi-calculator/bmi-calculator.html`
-   Lines: 12
+   Lines: 14
 
     - ✅ Has `<!DOCTYPE html>`
-    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Uses semantic HTML5 tags
     - ✅ Has viewport meta tag (mobile-friendly)
     - ✅ Has `lang` attribute
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **bmi-calculator.js**
    Path: `06-javascript/challenges/exercises/excercise-01/bmi-calculator/bmi-calculator.js`
-   Lines: 33
+   Lines: 35
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 2/5**
+   **Score: 5/5**
 
 📄 **mad-libs.html**
    Path: `06-javascript/challenges/exercises/excercise-01/mad-libs/mad-libs.html`
-   Lines: 11
+   Lines: 14
 
     - ✅ Has `<!DOCTYPE html>`
-    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Uses semantic HTML5 tags
     - ✅ Has viewport meta tag (mobile-friendly)
     - ✅ Has `lang` attribute
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **mad-libs.js**
    Path: `06-javascript/challenges/exercises/excercise-01/mad-libs/mad-libs.js`
-   Lines: 9
+   Lines: 23
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
+    - ✅ Uses arrow functions
     - ✅ Uses template literals
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses modern array methods
 
-   **Score: 3/5**
+   **Score: 5/5**
 
 📄 **temperature-converter.html**
    Path: `06-javascript/challenges/exercises/excercise-01/temperature-converter/temperature-converter.html`
-   Lines: 13
+   Lines: 15
 
     - ✅ Has `<!DOCTYPE html>`
-    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Uses semantic HTML5 tags
     - ✅ Has viewport meta tag (mobile-friendly)
     - ✅ Has `lang` attribute
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **temperature-converter.js**
    Path: `06-javascript/challenges/exercises/excercise-01/temperature-converter/temperature-converter.js`
-   Lines: 20
+   Lines: 24
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 2/5**
+   **Score: 4/5**
 
 📄 **deep-clone.js**
    Path: `06-javascript/challenges/exercises/excercise-02/deep-clone.js`
-   Lines: 20
+   Lines: 18
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 2/5**
+   **Score: 4/5**
 
 📄 **Type-Checker-Function.js**
    Path: `06-javascript/challenges/exercises/excercise-02/Type-Checker-Function.js`
-   Lines: 22
+   Lines: 14
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
@@ -287,12 +287,12 @@
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
     - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 2/5**
+   **Score: 3/5**
 
-### Topic Score: 78 / 115 (67%)
+### Topic Score: 101 / 115 (87%)
 
 ---
 

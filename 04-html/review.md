@@ -1,7 +1,7 @@
 # Review: 04-html
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 12:39
+**Review Date:** 2025-12-30 13:39
 
 ---
 
@@ -20,14 +20,14 @@
 
 📄 **employee-table.html**
    Path: `04-html/employee-table.html`
-   Lines: 126
+   Lines: 130
 
     - ✅ Has `<!DOCTYPE html>`
-    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Uses semantic HTML5 tags
     - ✅ Has viewport meta tag (mobile-friendly)
     - ✅ Has `lang` attribute
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **portfolio-v1.html**
    Path: `04-html/portfolio-v1.html`
@@ -78,7 +78,7 @@
 
    **Score: 5/5**
 
-### Topic Score: 39 / 40 (97%)
+### Topic Score: 40 / 40 (100%)
 
 ---
 
