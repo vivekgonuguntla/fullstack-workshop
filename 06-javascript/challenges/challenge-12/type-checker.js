@@ -1,18 +1,25 @@
-function typeOf(value) {
-    if (value === null) return 'null';
-    if (value === undefined) return 'undefined';
-    if (Number.isNaN(value)) return 'nan';
-    if (Array.isArray(value)) return 'array';
-    if (value instanceof Date) return 'date';
-    if (value instanceof Map) return 'map';
-    if (value instanceof Set) return 'set';
-    if (value instanceof RegExp) return 'regexp';
-    if (value instanceof Error) return 'error';
-    if (value instanceof Promise) return 'promise';
-    const t = typeof value;
-    if (t === 'object') return 'object';
-    return t; 
-}
+const typeOf = (value) => {
+  if (value === null) return 'null';
+  if (value === undefined) return 'undefined';
+  if (Number.isNaN(value)) return 'nan';
+
+  const typeRules = [
+    { check: Array.isArray, name: 'array' },
+    { check: v => v instanceof Date, name: 'date' },
+    { check: v => v instanceof Map, name: 'map' },
+    { check: v => v instanceof Set, name: 'set' },
+    { check: v => v instanceof RegExp, name: 'regexp' },
+    { check: v => v instanceof Error, name: 'error' },
+    { check: v => v instanceof Promise, name: 'promise' }
+  ];
+
+  const matchedRule = typeRules.find(rule => rule.check(value));
+  if (matchedRule) return `${matchedRule.name}`;
+
+  const t = typeof value;
+  if (t === 'object') return 'object';
+  return t;
+};
 
 
 console.log(typeOf(null));         
@@ -30,4 +37,4 @@ console.log(typeOf(new Map()));
 console.log(typeOf(new Set()));      
 console.log(typeOf(/regex/));       
 console.log(typeOf(new Error()));   
-console.log(typeOf(Promise.resolve())); 
+console.log(typeOf(Promise.resolve()));  
